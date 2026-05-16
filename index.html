@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Tools - TeamBCS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; background-color: #0b132a; }
+        .custom-title-gradient {
+            background: linear-gradient(to right, #b026ff, #ff2a85);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .manual-btn { transition: all 0.2s ease-in-out; }
+        .manual-btn:hover { transform: translateY(-2px); filter: brightness(1.15); }
+        .manual-btn:active { transform: translateY(1px) scale(0.99); }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-between p-5">
+    <div class="w-full max-w-md my-auto flex flex-col items-center">
+        <h1 class="text-[34px] font-bold mb-9 tracking-wide text-center">
+            <span class="custom-title-gradient">Credit Card Tool</span><span class="text-[#3b4766]">s</span>
+        </h1>
+        <div class="w-full flex flex-col gap-4 mb-7">
+            <a href="api/bin_checker.php" class="manual-btn w-full py-5 rounded-[18px] bg-gradient-to-r from-[#ff9f05] to-[#f57c00] text-white flex flex-col items-center justify-center gap-1 shadow-md">
+                <span class="text-2xl">🔍</span>
+                <span class="text-lg font-bold tracking-wide">BIN Checker</span>
+            </a>
+            <a href="api/card_generator.php" class="manual-btn w-full py-5 rounded-[18px] bg-gradient-to-r from-[#ff2a85] to-[#d81b60] text-white flex flex-col items-center justify-center gap-1 shadow-md">
+                <span class="text-2xl">🔄</span>
+                <span class="text-lg font-bold tracking-wide">Card Generator</span>
+            </a>
+            <a href="api/card_checker.php" class="manual-btn w-full py-5 rounded-[18px] bg-gradient-to-r from-[#00bfa5] to-[#00897b] text-white flex flex-col items-center justify-center gap-1 shadow-md">
+                <span class="text-2xl font-bold">✓</span>
+                <span class="text-lg font-bold tracking-wide">Card Checker (Luhn)</span>
+            </a>
+            <a href="api/bin_generator.php" class="manual-btn w-full py-5 rounded-[18px] bg-gradient-to-r from-[#ff5722] to-[#e64a19] text-white flex flex-col items-center justify-center gap-1 shadow-md">
+                <span class="text-2xl">⚙️</span>
+                <span class="text-lg font-bold tracking-wide">BIN Generator</span>
+            </a>
+        </div>
+        <div class="w-full bg-[#0f1b35] border border-[#1e2d4a] rounded-[22px] py-5 px-6 text-center shadow-lg">
+            <p class="text-[#9d4edd] font-semibold text-lg mb-1 tracking-wide">Made by TeamBCS</p>
+            <p class="text-xs text-[#627293] font-medium">Join Telegram: <a href="https://t.me/teambcs" target="_blank" class="text-[#5c6bc0] hover:text-[#7986cb] hover:underline font-mono ml-1">https://t.me/teambcs</a></p>
+        </div>
+    </div>
+</body>
+</html>
